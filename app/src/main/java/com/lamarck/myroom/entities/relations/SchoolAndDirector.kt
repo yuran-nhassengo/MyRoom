@@ -8,7 +8,7 @@ import com.lamarck.myroom.entities.School
 data class SchoolAndDirector(
     @Embedded  val School: School,
     @Relation(
-        parentColumn = "schollName",
+        parentColumn = "schoolName",
         entityColumn = "schoolName"
     )
     val director: Director
